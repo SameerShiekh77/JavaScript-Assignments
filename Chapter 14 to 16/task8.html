@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8 | Chapter 14 to 16</title>
+</head>
+
+<body>
+
+    <script>
+        //8.Write a program to store 3 student names in an array.Take another array to store score of these three students.
+        //Assume that total marks are 500 for each student, display the scores & percentages of students like:
+
+        let studentNames = [];
+        studentNames[0] = prompt("Enter First Student Name");
+        studentNames[1] = prompt("Enter Second Student Name");
+        studentNames[2] = prompt("Enter Third Student Name");
+        console.log(studentNames);
+        let scoreArray = [];
+        scoreArray[0] = prompt("Enter " + studentNames[0] + " score");
+        scoreArray[1] = prompt("Enter " + studentNames[1] + " score");
+        scoreArray[2] = prompt("Enter " + studentNames[2] + " score");
+        console.log(scoreArray);
+        let TM = 500;
+        let per1 = (scoreArray[0] / TM) * 100;
+        let per2 = (scoreArray[1] / TM) * 100;
+        let per3 = (scoreArray[2] / TM) * 100;
+        document.write("<h1>Score of " + studentNames[0] + " is " + scoreArray[0] + ". Percentage: " + per1 + "%<br></h1>");
+        document.write("<h1>Score of " + studentNames[1] + " is " + scoreArray[1] + ". Percentage: " + per2 + "%<br></h1>");
+        document.write("<h1>Score of " + studentNames[2] + " is " + scoreArray[2] + ". Percentage: " + per3 + "%<br></h1>");
+    </script>
+    <br>
+    <center><a href="chapter_14to16.html">GO BACK TO CHAPTER 14 to 16</a></center>
+
+</body>
+
+</html>

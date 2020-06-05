@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15 | Chapter 14 to 16</title>
+    <style>
+        .dropbtn {
+            background-color: black;
+            color: red;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Phone Manufactures</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a id="apple"></a>
+            <a id="samsung"></a>
+            <a id="motorola"></a>
+            <a id="nokia"></a>
+            <a id="sony"></a>
+            <a id="haier"></a>
+        </div>
+    </div>
+
+    <script>
+        //15.Write a program to store phone manufacturers (Apple,Samsung, Motorola, Nokia, Sony & Haier) in an array. 
+        //Display the following dropdown/select menu in your browser using document.write() method:
+
+        let arr = ["Apple", 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // document.write("<ul><li>" + arr[0] + "</li> <li>" + arr[1] + "</li> <li>" + arr[2] + "</li><li>" + arr[3] + "</li><li>" + arr[4] + "</li><li>" + arr[5] + "</li></ul>")
+        document.getElementById('apple').innerHTML = arr[0];
+        document.getElementById('samsung').innerHTML = arr[1];
+        document.getElementById('motorola').innerHTML = arr[2];
+        document.getElementById('nokia').innerHTML = arr[3];
+        document.getElementById('sony').innerHTML = arr[4];
+        document.getElementById('haier').innerHTML = arr[5];
+    </script>
+    <br>
+    <center><a href="chapter_14to16.html">GO BACK TO CHAPTER 14 to 16</a></center>
+
+</body>
+
+</html>

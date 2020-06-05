@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 | Chapter 9 to 11</title>
+</head>
+
+<body>
+
+    <script>
+        //Guess game: 
+        //Store a secret number (ranging from 1 to 10) in a variable.Prompt user to guess the secret number. 
+        //a. If user guesses the same number, show “Bingo! Correct answer”.
+        //b. If the guessed number +1 is the secret number, show 
+        //“Close enough to the correct answer”
+
+        var n = 7;
+        var num = +(prompt("Enter a Guess number"));
+        if (num === n) {
+            alert("Bingo! Correct Answer");
+            document.write("Bingo! Correct Answer");
+        } else if (num > n) {
+            alert("Close enough to the correct answer try to lower number");
+            document.write("Close enough to the correct answer try to lower number");
+        } else {
+            alert("Close enough to the correct answer try to higher number");
+            document.write("Close enough to the correct answer try to higher number");
+
+        }
+    </script>
+    <br><br>
+    <center><a href="chapter_9to11.html">GO BACK TO CHAPTER 9 to 11</a></center>
+
+</body>
+
+</html>

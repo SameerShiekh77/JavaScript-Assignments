@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 & 2 | Chapter 5</title>
+</head>
+
+<body>
+
+    <script>
+        //1.Write a program that take two numbers & add them in a new variable. Show the result in your browser.
+        //2. Repeat task1 for subtraction, multiplication, division & modulus.
+
+        var num1 = +(prompt("Enter first number"));
+        var num2 = +(prompt("Enter second number"));
+        var op = prompt("Select your operator\n+\n-\n*\n/\n%");
+
+        if (op == '+') {
+            ans = num1 + num2;
+            document.write("Sum of " + num1 + " and " + num2 + " is " + ans);
+        } else if (op == '-') {
+            ans = num1 - num2;
+            document.write("Subtraction of " + num1 + " and " + num2 + " is " + ans);
+        } else if (op == '*') {
+            ans = num1 * num2;
+            document.write("Multiplication of " + num1 + " and " + num2 + " is " + ans);
+        } else if (op == '/') {
+            ans = num1 / num2;
+            document.write("Division of " + num1 + " and " + num2 + " is " + ans);
+        } else if (op == '%') {
+            ans = num1 % num2;
+            document.write("Modulus of " + num1 + " and " + num2 + " is " + ans);
+        }
+    </script>
+    <br>
+    <center><a href="chapter_5.html">GO BACK TO CHAPTER 5</a></center>
+
+</body>
+
+</html>

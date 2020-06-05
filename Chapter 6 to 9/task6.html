@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 | Chapter 6 to 9</title>
+</head>
+
+<body>
+
+
+    <script>
+        //  6. Take:
+        //  a) Take three subjects name from user and store them in 3 different variables
+        //  b) Total marks for each subject is 100, store it in another variable
+        //  c) Take obtained marks for first subject from user and stored it in different variables
+        //  d) Take obtained marks for remaining 2 subjects from user and stored them in variables
+        //  e) Now calculate total marks and percentage and show the result in browser like  this. (Hint: user table)
+
+        var sub1 = prompt("Enter Your First Subject Name");
+        var sub2 = prompt("Enter Your Second Subject Name");
+        var sub3 = prompt("Enter Your Third Subject Name");
+        var TM = 100;
+        var ob1 = +(prompt("Enter Obtained Marks of First Subject"));
+        var ob2 = +(prompt("Enter Obtained Marks of Second Subject"));
+        var ob3 = +(prompt("Enter Obtained Marks of Third Subject"));
+        var per1, per2, per3, PER, OB, TM;
+        per1 = (ob1 / TM) * 100;
+        per2 = (ob2 / TM) * 100;
+        per3 = (ob3 / TM) * 100;
+        OB = ob1 + ob2 + ob3;
+        PER = (OB / 300) * 100;
+
+        document.write("<table> <tr> <th>Subject</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>Percentage</th> </tr> <tr> <td>" + sub1 + "</td> <td>" + TM + "</td> <td>" + ob1 + "</td> <td>" + per1 + "%</td> </tr> <tr> <td>" + sub2 + "</td> <td>" + TM + "</td> <td>" + ob2 + "</td> <td>" + per2 + "%</td> </tr> <tr> <td>" + sub3 + "</td> <td>" + TM + "</td> <td>" + ob3 + "</td> <td>" + per3 + "%</td> </tr> <tr> <td> </td> <th>" + 300 + "</th> <th>" + OB + "</th> <th>" + PER + "%</th>  </tr> </table>")
+    </script>
+    <br>
+    <center><a href="chapter_6to9.html">GO BACK TO CHAPTER 6 TO 9</a></center>
+
+
+</body>
+
+</html>

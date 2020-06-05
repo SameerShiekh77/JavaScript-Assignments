@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9 | Chapter 14 to 16</title>
+</head>
+
+<body>
+
+    <script>
+        //9.Initialize an array with color names. Display the array elements in your browser. 
+        //a. Ask the user what color he/she wants to add to the beginning & add that color to the beginning of the array. 
+        //Display the updated array in your browser. 
+        //b. Ask the user what color he/she wants to add to the end & add that color to the end of the array. Display the 
+        //updated array in your browser. 
+        //c. Add two more color to the beginning of the array. Display the updated array in your browser.
+        //d. Delete the first color in the array. Display the updated array in your browser. 
+        //e. Delete the last color in the array. Display the updated array in your browser. 
+        //f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired 
+        //position/index. . Display the updated array in your browser.
+        //g.Ask the user at which index he / she wants to delete color(s) & how many colors he / she wants to delete.Then
+        //remove the same number of color(s) from user-defined position/index.Display the updated array in your browser.
+        let colorNames = [];
+        colorNames[0] = prompt("What color you wants to add to the beginning?");
+        document.write(colorNames[0] + ",");
+        colorNames[1] = prompt("What color you wants to add to the end?");
+        document.write(colorNames[1] + "<br>");
+        let a = prompt("Add one more color to the beginning of the array");
+        let b = prompt("Add one more color to the beginning of the array");
+        colorNames.unshift(b);
+        colorNames.unshift(a);
+        document.write(colorNames + "<br>");
+        colorNames.shift(colorNames);
+        document.write(colorNames + "<br>");
+        colorNames.pop(colorNames);
+        document.write(colorNames + "<br>");
+        let indexNumber = +(prompt("Which index you wants to add a color"));
+        let Color = prompt("Which color you wants to add a index");
+        colorNames[indexNumber] = Color;
+        document.write(colorNames + "<br>");
+        let c = +(prompt("Which index you wants to delete color(s)?"));
+        let d = +(prompt("How many colors you wants to delete?"));
+        colorNames.splice(c, d);
+        document.write(colorNames);
+    </script>
+    <br>
+    <center><a href="chapter_14to16.html">GO BACK TO CHAPTER 14 to 16</a></center>
+
+</body>
+
+</html>
