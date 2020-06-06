@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13 | Chapter 5</title>
+</head>
+
+<body>
+
+    <script>
+        //13.The Life Time Supply Calculator: Ever wonder how much a "lifetime supply" of your favourite snack is?
+        //Wonder no more.
+        //a. Store your favourite snack into a variable
+        //b. Store your current age into a variable
+        //c. Store your maximum age into a variable
+        //d. Store an estimated amount per day (as a number).
+        //e. Calculate how many would you eat total for the rest of your life.
+        //Output the result to the screen like so: "You will need NNNN to last you until the ripe old age of NN"
+
+        document.write("<h1>The Life Time Supply Calculator</h1>");
+        let favouriteSnacks = prompt("Enter your favourite snack");
+        document.write("Favourite Snacks: " + favouriteSnacks + "<br>");
+        let currentAge = +(prompt("Enter your Current age"));
+        document.write("Current Age: " + currentAge + "<br>");
+        let maximumAge = +(prompt("Enter your Maximum Age"));
+        document.write("Estimated Maximum Age: " + maximumAge + "<br>");
+        let estimatedAmount = +(prompt("Enter your estimated amount per day"));
+        document.write("Amount of snacks per day: " + estimatedAmount + "<br>");
+        let total, a, b;
+        a = maximumAge - currentAge;
+        b = a * 365;
+        total = b * estimatedAmount;
+        document.write("You will need " + total + " to last you until the ripe old age of " + maximumAge)
+    </script>
+    <br>
+    <center><a href="chapter_5.html">GO BACK TO CHAPTER 5</a></center>
+
+</body>
+
+</html>
